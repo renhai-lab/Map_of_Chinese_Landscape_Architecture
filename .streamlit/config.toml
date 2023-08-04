@@ -1,0 +1,8 @@
+[theme]
+base="dark"
+
+[server]
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = false

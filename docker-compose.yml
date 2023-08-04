@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: streamlit-app
+    environment:
+      - SET_CONTAINER_TIMEZONE=true
+      - CONTAINER_TIMEZONE=Asia/Shanghai
+    ports:
+      - "8501:8501"
+    volumes:
+      - "./.streamlit:/app/.streamlit"
+#      - "/etc/timezone:/etc/timezone:ro"
+#      - "/etc/localtime:/etc/localtime:ro"
+    restart: unless-stopped
+    network_mode: bridge
+    command: streamlit run Home.py --server.address 0.0.0.0
