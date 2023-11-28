@@ -5,7 +5,7 @@ from data_functions import *
 from map_config import create_map
 
 setup_page_config()
-"## :world_map: 中国网红建筑景观项目地图"
+"# :world_map: 中国建筑景观地图"
 
 # 初始化数据库
 mg_db = initialize_mongodb()
