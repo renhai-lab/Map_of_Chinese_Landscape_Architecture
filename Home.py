@@ -16,7 +16,7 @@ st.markdown(
     """
     <div style='text-align: center;'>
           <a href="app_desktop" target="_self">
-            <img src="./app/static/cover.png" height="200" >
+            <img src="/app/static/cover.png" height="200" >
             <p>点击体验吧！</p>
         </a>
     </div>
@@ -47,7 +47,7 @@ st.markdown(
     - 微信公众号: renhai-lab
     - [我的知乎](https://www.zhihu.com/people/Ing_ideas)
     
-    <img src="https://cdn.renhai-lab.tech/upload/logo2.jpg" alt="更多账号" style="zoom:50%;" />
+    <img src="/app/static/logo-black-background.jpg" alt="更多账号" style="zoom:50%;" />
     
     ## 免责声明 | Disclaimer
     
