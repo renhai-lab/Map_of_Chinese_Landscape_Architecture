@@ -5,7 +5,14 @@ from data_functions import *
 from map_config import create_map
 
 setup_page_config()
-"# :world_map: 中国建筑景观地图"
+st.markdown(
+    f"""
+    <div style='text-align: center;'>
+        <h1>中国建筑景观地图：互动式探索</h1>
+        <p>Interactive Map of Chinese Landscape Architecture</p>
+    </div>
+    """,
+    unsafe_allow_html=True)
 
 # 初始化数据库
 mg_db = initialize_mongodb()

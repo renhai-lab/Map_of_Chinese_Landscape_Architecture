@@ -1,11 +1,11 @@
-#  中国建筑景观地图：互动式景观探索
+#  中国建筑景观地图：互动式探索
 > Interactive Map of Chinese Landscape Architecture
 
-本项目利用Python的[streamlit](https://streamlit.io/)包创建一个交互式网页，创建了一个交互式网页，专门展示中国的建筑、景观和室内设计作品。
+本项目利用Python的[streamlit](https://streamlit.io/)包创建一个交互式网页，专门展示中国的建筑、景观和室内设计作品。
 
 > Streamlit是一个强大的工具，它允许Python开发者快速构建网页应用，特别适合那些熟悉Python但不太了解网页编程语言的用户。
 
-借助地图，用户可以轻松地在地图上浏览附近的设计项目，并通过点击地图上的标记来获取每个项目的摘要信息。此外，用户还可以点击详情链接，访问每个项目的源网页，以获得更全面的信息。
+浏览地图，用户可以轻松地在地图上浏览附近的设计项目，并通过点击地图上的标记来获取每个项目的摘要信息。此外，用户还可以点击详情链接，访问每个项目的源网页，以获得更全面的信息。
 
 ## 一、成果展示 
 
@@ -17,11 +17,17 @@
 
   这是项目的主页，提供了项目说明。
 
-  [![Homepage](README.assets/image-20231128193944398.png)](https://map-of-chinese-landscape-architecture.streamlit.app/)
+![Homepage](README.assets/image-20231128193944398.png)
 
 #### [（2）💻 地图页面](https://map-of-chinese-landscape-architecture.streamlit.app/app_desktop)
 
- [ ![地图页面](README.assets/new-screenshot.png)](https://map-of-chinese-landscape-architecture.streamlit.app/app_desktop)
+![地图定位页面](README.assets/image-20231128234817762.png)
+
+![地图详情页面](README.assets/image-20231128234817762.png)
+
+![地图详情页面](README.assets/image-20231128234528041.png)
+
+
 
 ### 2.地图功能
 1. **地图查询**：用户可以在地图上查看不同设计项目的位置，快速获取相关信息。
@@ -35,6 +41,8 @@
 2. **地图的项目点与项目图、项目表格连动展示**
 
    在地图上选择标记点，会定位到相关项目，并显示对于的项目信息。
+
+   ❗❗项目的详细内容如果没有详细的地址，那此坐标点还是仅供参考。
 
 3. **chatgpt总结项目特点**
 
