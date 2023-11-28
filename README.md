@@ -14,7 +14,7 @@
 
   ![desktop](https://image-1315363329.cos.ap-shanghai.myqcloud.com/github_repo/202308042205399.gif)
 
-- [📱 移动端网页](https://landscape-architecture-app-webdisplay.streamlit.app/app_mobile)
+- [📱 移动端网页（维护中）](https://landscape-architecture-app-webdisplay.streamlit.app/app_mobile)
 
 ### 2）实现的功能
 1. **地图查询**
@@ -45,5 +45,5 @@
 ## TODO
 - [ ] 优化网页端显示效果
 - [ ] 页面载入自定义组件bug
-- [ ] 解决有些图片未能显示的问题
+- [x] 解决有些图片未能显示的问题
 

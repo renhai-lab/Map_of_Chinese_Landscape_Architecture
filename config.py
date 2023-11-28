@@ -1,14 +1,12 @@
 import streamlit as st
 
 
-
-
 # streamlit页面通用参数
 def setup_page_config():
     st.set_page_config(
         page_title="中国网红建筑景观项目地图 Home",
         page_icon=":world_map:",
-        layout="wide",
+        layout="centered",
         initial_sidebar_state="collapsed",
         menu_items={
             'Get Help': 'https://github.com/renhaiidea/Landscape_Architecture_Streamlit_Web_Display',

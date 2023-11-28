@@ -1,7 +1,5 @@
 import folium
 from folium import plugins
-import streamlit as st
-
 
 # 创建一个GeoJsonTooltip对象
 custom_tooltip = folium.GeoJsonTooltip(
@@ -14,6 +12,7 @@ custom_tooltip = folium.GeoJsonTooltip(
     max_height=100,  # 设置初始的最大高度
     max_length=500  # 设置初始的最大文本长度
 )
+
 
 def create_with_basemap(map_style, lat, lng, zoom_start, mapbox_config_dict):
     # 首先判断底图的选择
@@ -33,8 +32,8 @@ def create_with_basemap(map_style, lat, lng, zoom_start, mapbox_config_dict):
     )
     return m
 
-def create_map(lat, lng, city_data, mapbox_config_dict):
 
+def create_map(lat, lng, city_data, mapbox_config_dict):
     m = create_with_basemap(map_style="Mapbox Street",
                             lat=lat,
                             lng=lng,
@@ -53,9 +52,8 @@ def create_map(lat, lng, city_data, mapbox_config_dict):
 
     # 将GeoJson对象载入地图
     folium.GeoJson(city_data,
-                             tooltip=custom_tooltip,
-                             zoom_on_click=True,
-                             ).add_to(m)
+                   tooltip=custom_tooltip,
+                   zoom_on_click=True,
+                   ).add_to(m)
 
     return m
-

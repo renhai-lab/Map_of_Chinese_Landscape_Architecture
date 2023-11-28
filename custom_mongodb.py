@@ -1,19 +1,15 @@
 import json
 from datetime import datetime
 
-import pandas as pd
 import streamlit as st
-from bson.json_util import dumps
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
-
 
 
 class MongoDB:
     def __init__(self, url, db_name):
         self.client = MongoClient(url, server_api=ServerApi('1'))
         self.db = self.client[db_name]
-
 
     def read_city_coordinates(self, collection_name):
         """Read city names and their coordinates from the MongoDB collection."""
@@ -43,6 +39,7 @@ class MongoDB:
         collection = self.db[collection_name]
         items = self._get_cached_data(collection, coordinates, max_distance, max_items, filter_conditions)
         return self._convert_to_geojson(items)
+
     def write_data_to_db(self, collection_name, project_name, lat_lng, title_url, delete=False):
         """Write data to the specified MongoDB collection."""
         collection = self.db[collection_name]
